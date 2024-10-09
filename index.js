@@ -11,7 +11,8 @@ app.use(cors());
 
 app.get('/', async (req, res)=> {
     res.send("hola soy el backend de la calculadora de Tatiana");
-})
+});
+
 app.use('/v1/calculadora', router);
 
 app.listen(3500, ()=>{
